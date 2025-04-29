@@ -1,0 +1,28 @@
+<style>
+    .template-1 {
+        border: 1px solid #ddd;
+        padding: 10px;
+        background: #f9f9f9;
+    }
+    .template-1 img {
+        max-width: 100px;
+        display: block;
+    }
+    .template-1 .custom-info {
+        font-size: 14px;
+        color: red;
+    }
+</style>
+<div class="order-bump-product template-1" 
+     data-product-id="{{PRODUCT_ID}}" 
+     data-discount-type="{{DISCOUNT_TYPE}}" 
+     data-discount="{{DISCOUNT}}" 
+     data-quantity="{{QUANTITY}}">
+
+    <img src="{{IMAGE}}" alt="{{PRODUCT_NAME}}" />
+    <div class="custom-info">
+        <p>{{PRODUCT_NAME}}</p>
+        <p class="custom-price">{{PRICE}} <span class="product-quantity">X {{QUANTITY}}</span> </p>
+        <button type="button" class="add-to-cart" data-product-id="{{PRODUCT_ID}}">Add</button>
+    </div>
+</div>
